@@ -1,0 +1,169 @@
+//{颜色设置}
+@bgMain1:rgb(26, 26, 26);//背景颜色
+
+@bgLeftPan:rgba(15, 15, 15, 0.315);//左边的项目选择面板背景色
+@fgLeftPan:rgb(207, 207, 207);//项目名字的字色
+
+@bgLeftPanTitle:rgba(15, 15, 15, 0.308);//项目选择面板标题背景色
+@fgLeftPanTitle:rgb(238, 238, 238);//项目选择面板标题的字色
+
+@hvBgLeftPan:rgb(29, 29, 29);//左边的项目选择面板悬停背景色
+@hvFgBgLeftPan:rgb(0, 255, 242);//左边的项目选择面板悬停字色
+
+@bgCodePan:rgba(29, 29, 29, 0.719);//代码面板背景色
+@fgCodePan:white;//代码面板字色
+@bcCodePan:2px solid black;//代码面板边框
+
+@bgCodePanCloseButton:rgba(0,0,0,0.2);//关闭代码面板按钮背景色
+@fgCodePanCloseButton:white;//关闭代码面板按钮字色
+@hvFgCodePanCloseButton:yellow;//悬停关闭代码面板按钮字色
+
+//{尺寸设置}
+@wdLeftPan:25vw;
+@wdCodePan:400px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    background-color: rgba(128, 128, 128, 0.308);
+}
+body{
+    background-color: @bgMain1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    .leftPan{
+        position: absolute;
+        left: 0;
+        top: -20px;
+        width: @wdLeftPan;
+        height: calc(-20px + 100vh);
+        padding-top: 20px;
+        overflow: hidden;
+        background-color: @bgLeftPan;
+        z-index: 998;
+        backdrop-filter: blur(2px);
+        transition: 0.3s ease-in-out;
+        opacity: 0;
+        &:hover{
+            opacity: 1;
+        }
+        .title{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: left;
+            padding-left: 15px;
+            background-color: @bgLeftPanTitle;
+            letter-spacing: 2px;
+            color: @fgLeftPanTitle;
+            z-index: 999;
+        }
+        ul{
+            overflow-x: hidden;
+            overflow-y: scroll;
+            height: min-content;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            li{
+                transition: 0.2s ease-in-out;
+                cursor: pointer;
+                &:hover{
+                    background-color: @hvBgLeftPan;
+                    p{
+                        color: @hvFgBgLeftPan;
+                        padding-left: 30px;
+                    }
+                }
+                p{
+                    padding: 15px;
+                    letter-spacing: 2px;
+                    color: @fgLeftPan;
+                    transition: 0.2s ease-in-out;
+                }
+            }
+        }
+    }
+    .rightPan{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        iframe{
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+        }
+    }
+    .close{
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: transparent;
+        color: @fgCodePanCloseButton;
+        transition: 0.2s ease-in-out;
+        font-size: 30px;
+        z-index: 1000;
+        transform: rotate(135deg);
+        cursor: pointer;
+        &:hover{
+            color: @hvFgCodePanCloseButton;
+        }
+    }
+    .add{
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: @bgCodePanCloseButton;
+        color: @fgCodePanCloseButton;
+        transition: 0.2s ease-in-out;
+        font-size: 30px;
+        z-index: 1000;
+        transform: rotate(0);
+        cursor: pointer;
+        &:hover{
+            color: @hvFgCodePanCloseButton;
+        }
+    }
+    .codePan{
+        position: absolute;
+        z-index: 999;
+        right: 0;
+        top: 0;
+        width: @wdCodePan;
+        height: 100vh;
+        background-color: @bgCodePan;
+        backdrop-filter: blur(2px);
+        transition: 0.5s ease-in-out;
+        pre{
+            width: 100%;
+            border: @bcCodePan;
+            overflow: scroll;
+            padding-left: 4px;
+            position: relative;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            code{
+                color: @fgCodePan;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 10px;
+            }
+        }
+    }
+}

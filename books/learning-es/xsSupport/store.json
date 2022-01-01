@@ -1,0 +1,21 @@
+{
+    "identifierLength":4,
+    "projectName":"ECMAScript",
+    "author":"vezzzing",
+    "startDate":"2022.1.1",
+    "displayLessonIndex":0,
+    "codeShow":{
+        "paths":[
+            
+        ]
+    },
+    "lessonList":[
+        {
+            "identifier":"AAA",
+            "path":"start",
+            "name":"ES入门&关于变量",
+            "date":"2022.1.1",
+            "ips":1
+        }
+    ]
+}
