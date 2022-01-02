@@ -19,7 +19,8 @@
 @hvFgCodePanCloseButton:yellow;//悬停关闭代码面板按钮字色
 
 //{尺寸设置}
-@wdLeftPan:25vw;
+@wdCptLeftPan:25vw;
+@wdPhoneLeftPan:50vw;
 @wdCodePan:400px;
 
 *{
@@ -29,6 +30,17 @@
 }
 ::selection{
     background-color: rgba(128, 128, 128, 0.308);
+}
+/*适配移动端*/
+@media screen and (max-width:967px){
+    .leftPan{
+        width: @wdPhoneLeftPan;
+    }
+}
+@media screen and (min-width:967px){
+    .leftPan{
+        width: @wdCptLeftPan;
+    }
 }
 body{
     background-color: @bgMain1;
@@ -40,7 +52,6 @@ body{
         position: absolute;
         left: 0;
         top: -20px;
-        width: @wdLeftPan;
         height: calc(-20px + 100vh);
         padding-top: 20px;
         overflow: hidden;

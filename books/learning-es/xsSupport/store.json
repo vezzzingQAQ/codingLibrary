@@ -16,6 +16,27 @@
             "name":"ES入门&关于变量",
             "date":"2022.1.1",
             "ips":1
+        },
+        {
+            "identifier":"AAB",
+            "path":"u2",
+            "name":"函数的奇淫巧计",
+            "date":"2022.1.2",
+            "ips":1
+        },
+        {
+            "identifier":"AAC",
+            "path":"u3",
+            "name":"Symbol数据类型",
+            "date":"2022.1.2",
+            "ips":1
+        },
+        {
+            "identifier":"AAD",
+            "path":"u4",
+            "name":"迭代器iterator",
+            "date":"2022.1.2",
+            "ips":1
         }
     ]
 }

@@ -1,33 +1,5 @@
 ## 模板字符串
 会了，略
-## 简化对象写法
-1.允许在大括号里面直接写入变量和函数，简化书写
-```javascript
-let name="vezzzing";
-let log=function(){
-    console.log("vez");
-}
-const v={
-    name,
-    log,
-}
-/*
-等效于
-const v={
-    name:name,
-    log:log,
-}
-*/
-```
-2.允许省略function
-```javascript
-const v{
-    afun(...){
-        ....
-    }
-}
-```
-
 ## 箭头函数
 ```javascript
 let add=(a,b)=>{
@@ -94,3 +66,63 @@ ad.addEventListener("click",function(){
     })
 },2000);
 ```
+## 函数参数默认值
+```javascript
+function add(a,b,c=10){
+    ...
+}
+add(1,2);
+```
+1.具有默认值的参数一般位置靠后
+2.与解构赋值结合
+```javascript
+//NB厉害
+function connect({host="127.0.0.1",username,password,port}){
+    console.log(host);
+}
+connect({
+    host:"localhost",
+    username"root",
+    password:"122",
+    port:"3306",
+});
+```
+## rest参数
+```javascript
+function date(...args){
+    console.log(args);
+}
+date("1","2","3");//=>["1","2","3"]
+```
+1.rest参数必须放在最后
+
+## 扩展运算符
+将数组转化为逗号分隔的参数序列
+可以用于数组传参
+```javascript
+const num=[1,2,3];
+function log(){
+    console.log(arguments);
+}
+log(...num);//=>[1,2,3];
+```
+#### 应用
+1.数组合并
+```javascript
+const num1=[1,2,3];
+const num2=[3,4,5];
+const numtotal=[...num1,...num2];
+```
+2.数组克隆
+```javascript
+const num=[1,2,3];
+const num2=[...num];
+```
+3.将伪数组转为正真的数组
+arguments也可以用，但是最好直接rest
+```javascript
+const divs=document.querySelectorAll("div");
+cosnt divsArr=[...divs];
+```
+
+*Vezzzing 2022.1.2 于良渚 CAA 六号楼二楼自习室*

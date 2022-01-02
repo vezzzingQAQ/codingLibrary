@@ -18,77 +18,113 @@
   </head>
   <body for="html-export">
     <div class="mume markdown-preview">
-    <html><head></head><body><div><h1 class="mume-header" id="ecmascript">ECMAScript</h1>
+    <html><head></head><body><div><h2 class="mume-header" id="%E6%A8%A1%E6%9D%BF%E5%AD%97%E7%AC%A6%E4%B8%B2">&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;</h2>
 
-<h3 class="mume-header" id="%E5%85%A5%E9%97%A8">&#x5165;&#x95E8;</h3>
+<p>&#x4F1A;&#x4E86;&#xFF0C;&#x7565;</p>
+<h2 class="mume-header" id="%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0">&#x7BAD;&#x5934;&#x51FD;&#x6570;</h2>
 
-<h5 class="mume-header" id="ecma">ECMA</h5>
-
-<p>European computer manufacturers association</p>
-<h5 class="mume-header" id="ecmascript-1">ECMAScript</h5>
-
-<p>&#x6839;&#x636E;ECMA-262&#x6807;&#x51C6;&#x5236;&#x5B9A;&#x7684;&#x8BED;&#x8A00;</p>
-<h2 class="mume-header" id="let%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E">let&#x53D8;&#x91CF;&#x58F0;&#x660E;</h2>
-
-<h4 class="mume-header" id="%E5%A3%B0%E6%98%8E">&#x58F0;&#x660E;</h4>
-
-<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-let">let</span> a<span class="token punctuation">;</span>
-<span class="token keyword keyword-let">let</span> b<span class="token punctuation">,</span>c<span class="token punctuation">,</span>d<span class="token punctuation">;</span>
-<span class="token keyword keyword-let">let</span> e<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">;</span>
-<span class="token keyword keyword-let">let</span> f<span class="token operator">=</span><span class="token number">521</span><span class="token punctuation">,</span>g<span class="token operator">=</span><span class="token string">&quot;2333&quot;</span><span class="token punctuation">;</span>
-</pre><h4 class="mume-header" id="%E7%89%B9%E6%80%A7">&#x7279;&#x6027;</h4>
-
-<p>1.&#x4E0D;&#x80FD;&#x91CD;&#x590D;&#x58F0;&#x660E;<br>
-2.&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;<br>
-<em>&#x4F5C;&#x7528;&#x57DF;&#xFF1A;&#x5168;&#x5C40;,&#x51FD;&#x6570;,eval</em></p>
-<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token punctuation">{</span>
-    <span class="token keyword keyword-let">let</span> g<span class="token operator">=</span><span class="token string">&quot;233&quot;</span><span class="token punctuation">;</span>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-let">let</span> <span class="token function-variable function">add</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span>b</span><span class="token punctuation">)</span><span class="token arrow operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token keyword control-flow keyword-return">return</span><span class="token punctuation">(</span>a<span class="token operator">+</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>g<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//&#x8BFB;&#x53D6;&#x4E0D;&#x5230;</span>
-</pre><p>3.&#x4E0D;&#x5B58;&#x5728;&#x53D8;&#x91CF;&#x63D0;&#x5347;</p>
-<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>g<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword keyword-var">var</span> g<span class="token operator">=</span><span class="token string">&quot;233&quot;</span><span class="token punctuation">;</span><span class="token comment">//-&gt;undefined</span>
-</pre><pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>g<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword keyword-let">let</span> g<span class="token operator">=</span><span class="token string">&quot;233&quot;</span><span class="token punctuation">;</span><span class="token comment">//&#x62A5;&#x9519;</span>
-</pre><p>4.&#x4E0D;&#x5F71;&#x54CD;&#x4F5C;&#x7528;&#x57DF;&#x94FE;</p>
-<h2 class="mume-header" id="const%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E">const&#x53D8;&#x91CF;&#x58F0;&#x660E;</h2>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><h4 class="mume-header" id="%E4%B8%8E%E6%99%AE%E9%80%9A%E5%87%BD%E6%95%B0%E5%A3%B0%E6%98%8E%E5%8C%BA%E5%88%AB">&#x4E0E;&#x666E;&#x901A;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x533A;&#x522B;</h4>
 
-<h4 class="mume-header" id="%E5%A3%B0%E6%98%8E-1">&#x58F0;&#x660E;</h4>
-
-<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-const">const</span> <span class="token constant">SM</span><span class="token operator">=</span><span class="token string">&quot;Vezzzing&quot;</span><span class="token punctuation">;</span>
-</pre><h4 class="mume-header" id="%E7%89%B9%E5%BE%81">&#x7279;&#x5F81;</h4>
-
-<p>1.&#x4E00;&#x5B9A;&#x8981;&#x8D4B;&#x521D;&#x59CB;&#x503C;<br>
-2.&#x4E00;&#x822C;&#x7528;&#x5168;&#x5927;&#x5199;<br>
-3.&#x5E38;&#x91CF;&#x7684;&#x503C;&#x4E0D;&#x80FD;&#x4FEE;&#x6539;<br>
-4.&#x4E5F;&#x662F;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;</p>
-<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token punctuation">{</span>
-    <span class="token keyword keyword-const">const</span> <span class="token constant">G</span><span class="token operator">=</span><span class="token number">9.8</span><span class="token punctuation">;</span>
+<p>1.this&#x662F;&#x9759;&#x6001;&#x7684;&#xFF0C;this&#x59CB;&#x7EC8;&#x6307;&#x5411;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x65F6;&#x6240;&#x5728;&#x4F5C;&#x7528;&#x57DF;&#x4E0B;&#x7684;this&#x7684;&#x503C;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-function">function</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token keyword keyword-this">this</span><span class="token punctuation">.</span><span class="token property-access">name</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token constant">G</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//&#x8BFB;&#x53D6;&#x4E0D;&#x5230;</span>
-</pre><p>5.&#x5BF9;&#x6570;&#x7EC4;&#x548C;&#x5BF9;&#x8C61;&#x7684;&#x5143;&#x7D20;&#x4FEE;&#x6539;&#xFF0C;&#x4E0D;&#x7B97;&#x662F;&#x5BF9;&#x5E38;&#x91CF;&#x7684;&#x4FEE;&#x6539;&#xFF0C;&#x4E0D;&#x4F1A;&#x62A5;&#x9519;</p>
-<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-const">const</span> <span class="token constant">TEAM</span><span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&quot;VEZZZING&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;MEIIING&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token constant">TEAM</span><span class="token punctuation">.</span><span class="token method function property-access">push</span><span class="token punctuation">(</span><span class="token string">&quot;TIZYYY&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</pre><h2 class="mume-header" id="%E5%8F%98%E9%87%8F%E7%9A%84%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC">&#x53D8;&#x91CF;&#x7684;&#x89E3;&#x6784;&#x8D4B;&#x503C;</h2>
+<span class="token keyword keyword-let">let</span> <span class="token function-variable function">getName2</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token arrow operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token keyword keyword-this">this</span><span class="token punctuation">.</span><span class="token property-access">name</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-<p>1.&#x6570;&#x7EC4;&#x89E3;&#x6784;&#x8D4B;&#x503C;</p>
-<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-const">const</span> ta<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&quot;vezzzing&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;meiiing&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token keyword keyword-let">let</span> <span class="token punctuation">[</span>vz<span class="token punctuation">,</span>me<span class="token punctuation">]</span><span class="token operator">=</span>ta<span class="token punctuation">;</span>
-<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>vz<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//-&gt;vezzzing</span>
-<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>me<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//-&gt;meiiing</span>
-</pre><p>2.&#x5BF9;&#x8C61;&#x89E3;&#x6784;&#x8D4B;&#x503C;</p>
-<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-const">const</span> fuc1<span class="token operator">=</span><span class="token punctuation">{</span>
-    name<span class="token operator">:</span><span class="token string">&quot;2dfuc&quot;</span><span class="token punctuation">,</span>
-    fuc<span class="token operator">:</span><span class="token string">&quot;sin(x*y)&quot;</span><span class="token punctuation">,</span>
-    <span class="token function-variable function">tostr</span><span class="token operator">:</span><span class="token keyword keyword-function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">&quot;sin(x*y)&quot;</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword keyword-let">let</span> <span class="token punctuation">{</span>name<span class="token punctuation">,</span>fuc<span class="token punctuation">,</span>tostr<span class="token punctuation">}</span><span class="token operator">=</span>fuc1<span class="token punctuation">;</span><span class="token comment">//&#x53D8;&#x91CF;&#x540D;&#x548C;&#x6210;&#x5458;&#x540D;&#x987B;&#x4E00;&#x81F4;!!!</span>
-<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//-&gt;2dfuc</span>
-<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>fuc<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//-&gt;sin(x*y)</span>
-<span class="token function">tostr</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//-&gt;sin(x*y);</span>
-</pre><p><em>Vezzzing 2022.1.1 &#x4E8E;&#x826F;&#x6E1A; CAA &#x516D;&#x53F7;&#x697C;&#x4E8C;&#x697C;&#x81EA;&#x4E60;&#x5BA4;</em></p>
+<span class="token dom variable">window</span><span class="token punctuation">.</span><span class="token property-access">name</span><span class="token operator">=</span><span class="token string">&quot;vezzzing&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-const">const</span> cda<span class="token operator">=</span><span class="token punctuation">{</span>
+    name<span class="token operator">:</span><span class="token string">&quot;233&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//&#x76F4;&#x63A5;&#x8C03;&#x7528;</span>
+<span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//-&gt;vezzzing &#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#x9ED8;&#x8BA4;&#x6307;&#x5411;window</span>
+<span class="token function">getName2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//-&gt;vezzzing &#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#x9ED8;&#x8BA4;&#x6307;&#x5411;window</span>
+
+<span class="token comment">//call&#x6539;&#x53D8;this</span>
+getName<span class="token punctuation">.</span><span class="token method function property-access">call</span><span class="token punctuation">(</span>cda<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//-&gt;233 </span>
+getName2<span class="token punctuation">.</span><span class="token method function property-access">call</span><span class="token punctuation">(</span>cda<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//-&gt;vezzzing</span>
+</pre><p>2.&#x4E0D;&#x80FD;&#x4F5C;&#x4E3A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5B9E;&#x4F8B;&#x5316;&#x5BF9;&#x8C61;<br>
+3.&#x4E0D;&#x80FD;&#x5728;&#x51FD;&#x6570;&#x4F53;&#x4E2D;&#x4F7F;&#x7528;arguments&#x53D8;&#x91CF;<br>
+4.&#x7BAD;&#x5934;&#x51FD;&#x6570;&#x7B80;&#x5199;<br>
+<em>1&#x7701;&#x7565;&#x5C0F;&#x62EC;&#x53F7;&#xFF0C;&#x5F53;&#x5F62;&#x53C2;&#x6709;&#x4E14;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x65F6;</em></p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-let">let</span> <span class="token function-variable function">add</span><span class="token operator">=</span><span class="token parameter">n</span><span class="token arrow operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token keyword control-flow keyword-return">return</span> n<span class="token operator">+</span>n<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><p><em>2&#x7701;&#x7565;&#x82B1;&#x62EC;&#x53F7;&#x548C;return&#x8BED;&#x53E5;&#xFF0C;&#x5F53;&#x51FD;&#x6570;&#x4F53;&#x53EA;&#x6709;&#x4E00;&#x884C;&#x8BED;&#x53E5;&#x65F6;</em></p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-let">let</span> <span class="token function-variable function">pow</span><span class="token operator">=</span><span class="token parameter">n</span><span class="token arrow operator">=&gt;</span>n<span class="token operator">*</span>n<span class="token punctuation">;</span>
+</pre><h4 class="mume-header" id="%E5%BA%94%E7%94%A8">&#x5E94;&#x7528;</h4>
+
+<p>1.&#x70B9;&#x51FB;DIV&#x4E24;&#x79D2;&#x540E;&#x6539;&#x53D8;&#x989C;&#x8272;<br>
+<em>this&#x8F6C;&#x6362;</em><br>
+&#x539F;&#x6765;&#x7684;&#x5199;&#x6CD5;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-let">let</span> ad<span class="token operator">=</span><span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;ad&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ad<span class="token punctuation">.</span><span class="token method function property-access">addEventListener</span><span class="token punctuation">(</span><span class="token string">&quot;click&quot;</span><span class="token punctuation">,</span><span class="token keyword keyword-function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword keyword-let">let</span> _this<span class="token operator">=</span><span class="token keyword keyword-this">this</span><span class="token punctuation">;</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword keyword-function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        _this<span class="token punctuation">.</span><span class="token property-access">style</span><span class="token punctuation">.</span><span class="token property-access">background</span><span class="token operator">=</span><span class="token string">&quot;rgb(0,255,0)&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</pre><p>&#x7BAD;&#x5934;&#x51FD;&#x6570;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-let">let</span> ad<span class="token operator">=</span><span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;ad&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ad<span class="token punctuation">.</span><span class="token method function property-access">addEventListener</span><span class="token punctuation">(</span><span class="token string">&quot;click&quot;</span><span class="token punctuation">,</span><span class="token keyword keyword-function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token arrow operator">=&gt;</span><span class="token punctuation">{</span>
+        <span class="token keyword keyword-this">this</span><span class="token punctuation">.</span><span class="token property-access">style</span><span class="token punctuation">.</span><span class="token property-access">background</span><span class="token operator">=</span><span class="token string">&quot;rgb(0,255,0)&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><h2 class="mume-header" id="%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E9%BB%98%E8%AE%A4%E5%80%BC">&#x51FD;&#x6570;&#x53C2;&#x6570;&#x9ED8;&#x8BA4;&#x503C;</h2>
+
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-function">function</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token operator">=</span><span class="token number">10</span></span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token spread operator">...</span>
+<span class="token punctuation">}</span>
+<span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><p>1.&#x5177;&#x6709;&#x9ED8;&#x8BA4;&#x503C;&#x7684;&#x53C2;&#x6570;&#x4E00;&#x822C;&#x4F4D;&#x7F6E;&#x9760;&#x540E;<br>
+2.&#x4E0E;&#x89E3;&#x6784;&#x8D4B;&#x503C;&#x7ED3;&#x5408;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token comment">//NB&#x5389;&#x5BB3;</span>
+<span class="token keyword keyword-function">function</span> <span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">{</span>host<span class="token operator">=</span><span class="token string">&quot;127.0.0.1&quot;</span><span class="token punctuation">,</span>username<span class="token punctuation">,</span>password<span class="token punctuation">,</span>port<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>host<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    host<span class="token operator">:</span><span class="token string">&quot;localhost&quot;</span><span class="token punctuation">,</span>
+    username<span class="token string">&quot;root&quot;</span><span class="token punctuation">,</span>
+    password<span class="token operator">:</span><span class="token string">&quot;122&quot;</span><span class="token punctuation">,</span>
+    port<span class="token operator">:</span><span class="token string">&quot;3306&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><h2 class="mume-header" id="rest%E5%8F%82%E6%95%B0">rest&#x53C2;&#x6570;</h2>
+
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-function">function</span> <span class="token function">date</span><span class="token punctuation">(</span><span class="token parameter"><span class="token spread operator">...</span>args</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>args<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">date</span><span class="token punctuation">(</span><span class="token string">&quot;1&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;2&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;3&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//=&gt;[&quot;1&quot;,&quot;2&quot;,&quot;3&quot;]</span>
+</pre><p>1.rest&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x653E;&#x5728;&#x6700;&#x540E;</p>
+<h2 class="mume-header" id="%E6%89%A9%E5%B1%95%E8%BF%90%E7%AE%97%E7%AC%A6">&#x6269;&#x5C55;&#x8FD0;&#x7B97;&#x7B26;</h2>
+
+<p>&#x5C06;&#x6570;&#x7EC4;&#x8F6C;&#x5316;&#x4E3A;&#x9017;&#x53F7;&#x5206;&#x9694;&#x7684;&#x53C2;&#x6570;&#x5E8F;&#x5217;<br>
+&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x6570;&#x7EC4;&#x4F20;&#x53C2;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-const">const</span> num<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-function">function</span> <span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>arguments<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">log</span><span class="token punctuation">(</span><span class="token spread operator">...</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//=&gt;[1,2,3];</span>
+</pre><h4 class="mume-header" id="%E5%BA%94%E7%94%A8-1">&#x5E94;&#x7528;</h4>
+
+<p>1.&#x6570;&#x7EC4;&#x5408;&#x5E76;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-const">const</span> num1<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-const">const</span> num2<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-const">const</span> numtotal<span class="token operator">=</span><span class="token punctuation">[</span><span class="token spread operator">...</span>num1<span class="token punctuation">,</span><span class="token spread operator">...</span>num2<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</pre><p>2.&#x6570;&#x7EC4;&#x514B;&#x9686;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-const">const</span> num<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-const">const</span> num2<span class="token operator">=</span><span class="token punctuation">[</span><span class="token spread operator">...</span>num<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</pre><p>3.&#x5C06;&#x4F2A;&#x6570;&#x7EC4;&#x8F6C;&#x4E3A;&#x6B63;&#x771F;&#x7684;&#x6570;&#x7EC4;<br>
+arguments&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#xFF0C;&#x4F46;&#x662F;&#x6700;&#x597D;&#x76F4;&#x63A5;rest</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-const">const</span> divs<span class="token operator">=</span><span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">&quot;div&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+cosnt divsArr<span class="token operator">=</span><span class="token punctuation">[</span><span class="token spread operator">...</span>divs<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</pre><p><em>Vezzzing 2022.1.2 &#x4E8E;&#x826F;&#x6E1A; CAA &#x516D;&#x53F7;&#x697C;&#x4E8C;&#x697C;&#x81EA;&#x4E60;&#x5BA4;</em></p>
 </div></body></html>
     </div>
   </body>

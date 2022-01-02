@@ -79,6 +79,34 @@ console.log(name);//->2dfuc
 console.log(fuc);//->sin(x*y)
 tostr();//->sin(x*y);
 ``` 
+## 简化对象写法
+1.允许在大括号里面直接写入变量和函数，简化书写
+```javascript
+let name="vezzzing";
+let log=function(){
+    console.log("vez");
+}
+const v={
+    name,
+    log,
+}
+/*
+等效于
+const v={
+    name:name,
+    log:log,
+}
+*/
+```
+2.允许省略function
+```javascript
+const v{
+    afun(...){
+        ....
+    }
+}
+```
+
 
   
 *Vezzzing 2022.1.1 于良渚 CAA 六号楼二楼自习室*

@@ -6,6 +6,17 @@
 ::selection {
   background-color: rgba(128, 128, 128, 0.308);
 }
+/*适配移动端*/
+@media screen and (max-width: 967px) {
+  .leftPan {
+    width: 50vw;
+  }
+}
+@media screen and (min-width: 967px) {
+  .leftPan {
+    width: 25vw;
+  }
+}
 body {
   background-color: #1a1a1a;
   width: 100vw;
@@ -17,7 +28,6 @@ body .leftPan {
   position: absolute;
   left: 0;
   top: -20px;
-  width: 25vw;
   height: calc(-20px + 100vh);
   padding-top: 20px;
   overflow: hidden;

@@ -1,0 +1,20 @@
+{
+    "projectName":"Git",
+    "author":"vezzzing",
+    "startDate":"2022.1.1",
+    "displayLessonIndex":0,
+    "codeShow":{
+        "paths":[
+            
+        ]
+    },
+    "lessonList":[
+        {
+            "identifier":"AAA",
+            "path":"l1",
+            "name":"git入门",
+            "date":"2022.1.1",
+            "ips":1
+        }
+    ]
+}
