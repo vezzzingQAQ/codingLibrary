@@ -3,32 +3,21 @@
     "author":"vezzzing",
     "startDate":"2021.12.20",
     "displayLessonIndex":0,
-    "codeShow":{
-        "paths":[
-
-        ]
-    },
     "lessonList":[
         {
             "identifier":"AAA",
             "path":"types",
-            "name":"ts入门",
-            "date":"2021.12.20",
-            "ips":1
+            "name":"ts入门"
         },
         {
             "identifier":"BAC",
             "path":"basic",
-            "name":"ts入土",
-            "date":"2021.12.20",
-            "ips":1
+            "name":"ts入土"
         },
         {
             "identifier":"BAD",
             "path":"advance",
-            "name":"ts升华",
-            "date":"2022.1.1",
-            "ips":1
+            "name":"ts升华"
         }
     ]
 }

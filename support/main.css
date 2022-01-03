@@ -69,6 +69,7 @@ body .leftPan ul li:hover {
 body .leftPan ul li:hover p {
   color: #00fff2;
   padding-left: 30px;
+  overflow: hidden;
 }
 body .leftPan ul li p {
   padding: 15px;

@@ -1,0 +1,16 @@
+{
+    "bookList":[
+        {
+            "name":"TypeScript入土指南",
+            "path":"ts"
+        },
+        {
+            "name":"Less从框架到Css",
+            "path":"less"
+        },
+        {
+            "name":"ES6-11从开发到脱发",
+            "path":"es"
+        }
+    ]
+}

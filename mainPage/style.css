@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1a1a1a;
+  position: relative;
+}
+body .bookList {
+  width: 100%;
+}
+body .bookList ul li {
+  list-style: none;
+  padding: 10px 15px;
+  width: 100%;
+}
+body .bookList ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 16px;
+  letter-spacing: 2px;
+  transition: 0.3s ease-in-out;
+}
+body .bookList ul li :hover {
+  color: #00fff2;
+  letter-spacing: 3px;
+}
