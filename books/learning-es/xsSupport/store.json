@@ -38,6 +38,16 @@
             "identifier":"AAF",
             "path":"promise",
             "name":"Promise异步编程"
+        },
+        {
+            "identifier":"AAG",
+            "path":"5",
+            "name":"Set集合"
+        },
+        {
+            "identifier":"AAH",
+            "path":"6",
+            "name":"Map映射"
         }
     ]
 }
