@@ -9,7 +9,11 @@ var initPage=()=>{/**初始化页面 */
                 }
             }
             {/**设置首页课程 */
-                openLesson(`../main/${lessonList[displayLessonIndex].identifier}_${lessonList[displayLessonIndex].path}/main.html`);
+                if(lessonList[displayLessonIndex].hasOwnProperty("path")){
+                    openLesson(`../main/${lessonList[displayLessonIndex].identifier}_${lessonList[displayLessonIndex].path}/main.html`);
+                }else{
+                    openLesson(`../main/${lessonList[displayLessonIndex].identifier}/main.html`);
+                }
             }
             registerAction();   
             //填写标题
@@ -40,9 +44,14 @@ var getStore=(f/*传入的函数:function(store){}可以操作store对象*/)=>{/
         f(store);
     };
 }
-var addLesson=({identifier,path,name})=>{/**添加左侧列表 */
+var addLesson=({identifier,path="",name})=>{/**添加左侧列表 */
     let container=document.querySelector(".leftPan ul");
-    let textTemp=`<li><p data-path="../main/${identifier}_${path}/main.html">${name}</p></li>`;
+    let textTemp;
+    if(path==""){
+        textTemp=`<li><p data-path="../main/${identifier}/main.html">${name}</p></li>`;
+    }else{
+        textTemp=`<li><p data-path="../main/${identifier}_${path}/main.html">${name}</p></li>`;
+    }
     container.innerHTML+=textTemp;
 }
 var openLesson=(path)=>{/**切换iframe路径 */

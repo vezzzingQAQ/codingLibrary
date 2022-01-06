@@ -48,6 +48,28 @@
             "identifier":"AAH",
             "path":"6",
             "name":"Map映射"
+        },
+        {
+            "identifier":"AAI",
+            "path":"7",
+            "name":"Class类"
+        },
+        {
+            "identifier":"AAJ",
+            "path":"n",
+            "name":"Number和Math新特性"
+        },
+        {
+            "identifier":"AAK",
+            "name":"类Object新特性"
+        },
+        {
+            "identifier":"AAL",
+            "name":"模块化"
+        },
+        {
+            "identifier":"AAM",
+            "name":"ES7:include 幂运算"
         }
     ]
 }

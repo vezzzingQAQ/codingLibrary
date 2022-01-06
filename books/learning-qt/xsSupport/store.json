@@ -1,0 +1,17 @@
+{
+    "projectName":"Git",
+    "author":"vezzzing",
+    "startDate":"2022.1.1",
+    "displayLessonIndex":0,
+    "codeShow":{
+        "paths":[
+            
+        ]
+    },
+    "lessonList":[
+        {
+            "identifier":"AAA",
+            "name":"Qt初始"
+        }
+    ]
+}
