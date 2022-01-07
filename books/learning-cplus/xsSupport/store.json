@@ -1,7 +1,7 @@
 {
-    "projectName":"Git",
+    "projectName":"C++",
     "author":"vezzzing",
-    "startDate":"2022.1.1",
+    "startDate":"2022.1.7",
     "displayLessonIndex":0,
     "codeShow":{
         "paths":[
@@ -11,10 +11,7 @@
     "lessonList":[
         {
             "identifier":"AAA",
-            "path":"l1",
-            "name":"git入门",
-            "date":"2022.1.1",
-            "ips":1
+            "name":"快速入门"
         }
     ]
 }

@@ -6,17 +6,14 @@
     "lessonList":[
         {
             "identifier":"AAA",
-            "path":"types",
             "name":"ts入门"
         },
         {
             "identifier":"BAC",
-            "path":"basic",
             "name":"ts入土"
         },
         {
             "identifier":"BAD",
-            "path":"advance",
             "name":"ts升华"
         }
     ]

@@ -11,52 +11,42 @@
     "lessonList":[
         {
             "identifier":"AAA",
-            "path":"start",
-            "name":"ES入门&关于变量"
+            "name":"ES6入门&关于变量"
         },
         {
             "identifier":"AAB",
-            "path":"u2",
             "name":"函数的奇淫巧计"
         },
         {
             "identifier":"AAC",
-            "path":"u3",
             "name":"Symbol数据类型"
         },
         {
             "identifier":"AAD",
-            "path":"u4",
             "name":"迭代器iterator"
         },
         {
             "identifier":"AAE",
-            "path":"genator",
             "name":"生成器generator"
         },
         {
             "identifier":"AAF",
-            "path":"promise",
             "name":"Promise异步编程"
         },
         {
             "identifier":"AAG",
-            "path":"5",
             "name":"Set集合"
         },
         {
             "identifier":"AAH",
-            "path":"6",
             "name":"Map映射"
         },
         {
             "identifier":"AAI",
-            "path":"7",
             "name":"Class类"
         },
         {
             "identifier":"AAJ",
-            "path":"n",
             "name":"Number和Math新特性"
         },
         {
@@ -66,10 +56,18 @@
         {
             "identifier":"AAL",
             "name":"模块化"
-        },
+        },    
         {
             "identifier":"AAM",
             "name":"ES7:include 幂运算"
+        },
+        {
+            "identifier":"AAN",
+            "name":"ES8:await&async"
+        },
+        {
+            "identifier":"AAO",
+            "name":"ES8:Object新特性"
         }
     ]
 }

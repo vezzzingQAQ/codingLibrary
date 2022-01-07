@@ -1,5 +1,5 @@
 {
-    "projectName":"Git",
+    "projectName":"Qt",
     "author":"vezzzing",
     "startDate":"2022.1.1",
     "displayLessonIndex":0,
@@ -12,6 +12,10 @@
         {
             "identifier":"AAA",
             "name":"Qt初始"
+        },
+        {
+            "identifier":"AAB",
+            "name":"创建按钮&窗体初识"
         }
     ]
 }

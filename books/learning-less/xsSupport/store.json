@@ -6,17 +6,14 @@
     "lessonList":[
         {
             "identifier":"AAA",
-            "path":"1",
             "name":"注释和变量"
         },
         {
             "identifier":"AAB",
-            "path":"2",
             "name":"混合MixIn和文件引入"
         },
         {
             "identifier":"AAC",
-            "path":"3",
             "name":"less计算&应用"
         }
     ]

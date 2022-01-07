@@ -28,7 +28,7 @@ body .leftPan {
   position: absolute;
   left: 0;
   top: -20px;
-  height: calc(-20px + 100vh);
+  height: calc(20px + 100vh);
   padding-top: 20px;
   overflow: hidden;
   background-color: rgba(15, 15, 15, 0.315);
