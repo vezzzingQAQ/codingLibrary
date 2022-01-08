@@ -18,29 +18,40 @@
   </head>
   <body for="html-export">
     <div class="mume markdown-preview">
-    <html><head></head><body><div><h2 class="mume-header" id="%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8">&#x5FEB;&#x901F;&#x5165;&#x95E8;</h2>
+    <html><head></head><body><div><h2 class="mume-header" id="es9%E5%AF%B9%E8%B1%A1%E6%8B%93%E5%B1%95%E8%BF%90%E7%AE%97%E7%AC%A6">ES9&#xFF1A;&#x5BF9;&#x8C61;&#x62D3;&#x5C55;&#x8FD0;&#x7B97;&#x7B26;</h2>
 
-<h4 class="mume-header" id="visualstudio">VisualStudio</h4>
+<h4 class="mume-header" id="%E5%AF%B9%E8%B1%A1%E6%89%A9%E5%B1%95rest">&#x5BF9;&#x8C61;&#x6269;&#x5C55;&#x3010;rest&#x3011;</h4>
 
-<p>&#x521B;&#x5EFA;&#x9879;&#x76EE;&#xFF1A;</p>
-<blockquote>
-<p>C++&gt;&#x7A7A;&#x9879;&#x76EE;</p>
-</blockquote>
-<p>&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#xFF1A;</p>
-<blockquote>
-<p>&#x6587;&#x4EF6;&#x5939;&#x89C6;&#x56FE;&#x53F3;&#x51FB;&#x6E90;&#x6587;&#x4EF6;&gt;&#x9009;&#x62E9;C++&#x6587;&#x4EF6;&gt;&#x6DFB;&#x52A0;</p>
-</blockquote>
-<p>&#x4EE3;&#x7801;&#x7F16;&#x5199;&#xFF1A;[....cpp]&#xFF1A;</p>
-<pre data-role="codeBlock" data-info="c++" class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span> <span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
-<span class="token keyword keyword-using">using</span> <span class="token keyword keyword-namespace">namespace</span> std<span class="token punctuation">;</span>
-<span class="token comment">//&#x5165;&#x53E3;&#x51FD;&#x6570;&#xFF0C;&#x6709;&#x4E14;&#x53EA;&#x6709;&#x4E00;&#x4E2A;</span>
-<span class="token keyword keyword-int">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-	cout <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;hello world&quot;</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-	<span class="token function">system</span><span class="token punctuation">(</span><span class="token string">&quot;pause&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token keyword keyword-return">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<p>&#x4EE5;&#x524D;&#x7684;&#x5199;&#x6CD5;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-function">function</span> <span class="token function">connect</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>host<span class="token punctuation">,</span>port<span class="token punctuation">,</span>username<span class="token punctuation">}</span></span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>host<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>port<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>username<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-</pre><p><em>Vezzzing 2022.1.7&#x4E8E;&#x826F;&#x6E1A;CAA&#x516D;&#x53F7;&#x697C;&#x4E8C;&#x697C;&#x81EA;&#x4E60;&#x5BA4;</em></p>
+<span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    host<span class="token operator">:</span><span class="token string">&quot;127.0.0.1&quot;</span><span class="token punctuation">,</span>
+    port<span class="token operator">:</span><span class="token number">3306</span><span class="token punctuation">,</span>
+    username<span class="token operator">:</span><span class="token string">&quot;root&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token comment">//=&gt;127.0.0.1,3306,root</span>
+</pre><p>&#x5BF9;&#x8C61;&#x6269;&#x5C55;</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-function">function</span> <span class="token function">connect</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>host<span class="token punctuation">,</span>port<span class="token punctuation">,</span><span class="token spread operator">...</span>user<span class="token punctuation">}</span></span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+</pre><pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-function">function</span> <span class="token function">connect</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>host<span class="token punctuation">,</span>port<span class="token punctuation">,</span><span class="token spread operator">...</span>user<span class="token punctuation">}</span></span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>host<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>port<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//&#x5269;&#x4F59;&#x53C2;&#x6570;&#x4F1A;&#x5B58;&#x5230;user&#x5BF9;&#x8C61;&#x91CC;&#x9762;</span>
+</pre><h4 class="mume-header" id="%E5%AF%B9%E8%B1%A1%E5%B1%95%E5%BC%80%E5%AF%B9%E8%B1%A1">&#x5BF9;&#x8C61;&#x5C55;&#x5F00;&#x3010;...&#x5BF9;&#x8C61;&#x3011;</h4>
+
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-const">const</span> s1<span class="token operator">=</span><span class="token punctuation">{</span>
+    q<span class="token operator">:</span><span class="token string">&quot;123&quot;</span><span class="token punctuation">,</span>
+    b<span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+<span class="token spread operator">...</span>s1<span class="token comment">//=&gt;q:&quot;123&quot;,b:2</span>
+</pre><h5 class="mume-header" id="%E7%94%A8%E5%A4%84">&#x7528;&#x5904;</h5>
+
+<p>&#x5C06;&#x591A;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x5408;&#x5E76;&#x4E3A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</p>
+<p><em>Vezzzing 2022.1.8 &#x4E8E;&#x8427;&#x5C71; &#x5BB6;</em></p>
 </div></body></html>
     </div>
   </body>

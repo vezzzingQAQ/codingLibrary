@@ -67,7 +67,15 @@
         },
         {
             "identifier":"AAO",
-            "name":"ES8:Object新特性"
+            "name":"Object新特性"
+        },
+        {
+            "identifier":"AAP",
+            "name":"ES9:对象扩展运算符"
+        },
+        {
+            "identifier":"AAQ",
+            "name":"正则表达式奇淫巧计"
         }
     ]
 }

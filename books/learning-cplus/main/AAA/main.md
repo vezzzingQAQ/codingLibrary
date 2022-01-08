@@ -1,5 +1,4 @@
 ## 快速入门
-![vezzzing](./imgs/1.JPG)
 #### VisualStudio
 创建项目：
 > C++>空项目
